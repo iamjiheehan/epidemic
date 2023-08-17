@@ -674,6 +674,11 @@ margin-bottom: 0.5rem;
     border-radius: 2px;
 }
 
+
+.select-box:hover {
+    cursor: pointer;
+}
+
 .select-box p {
     background-color: red;
     text-align: left;
@@ -691,7 +696,7 @@ margin-bottom: 0.5rem;
 }
 
 
-.arr-down {
+.arr-down{
     position: absolute;
     pointer-events: none;
     width: 1.8rem;
