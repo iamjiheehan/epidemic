@@ -65,10 +65,13 @@ nav {
 }
 
 .wrap {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    /* padding-left: 4rem;
+    padding-right:4rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; */
+
+    padding: 80px 64px;
+    margin: 0px 106px;
 }
 
 .relative {
@@ -240,10 +243,14 @@ a {
 /* --------------------------- Genre Section start----------------------- */
 
 .genre_item-wrap {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(96px, 1fr));
     gap: 2rem;
-    grid-auto-flow:column;
+    grid-auto-flow:column; */
+
+    display: flex;
+    justify-content: space-around;
 }
 
 .genre_item {
@@ -299,9 +306,14 @@ a {
 
 .soundtrack_section ul {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    grid-template-columns: repeat(3, minmax(416px, 1fr));
     column-gap: 2rem;
     row-gap: 2rem;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; */
+
     margin: auto;
     width: 100%;
     box-sizing: border-box;
@@ -309,8 +321,8 @@ a {
 
 .soundtrack_item {
     position: relative;
-    max-width: 416px;
-    max-height: 280px;
+    /* max-width: 416px; */
+    /* max-height: 280px; */
 }
 
 .soundtrack_item-txt {
@@ -343,8 +355,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    padding: 5rem 4rem;
-
+    height: 38.25rem;
 }
 
 .how-L {
