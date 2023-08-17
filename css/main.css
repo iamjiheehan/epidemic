@@ -228,11 +228,17 @@ a {
 }
 
 .showcase_txtslide-wrap {
-    height: 3.5rem;
     overflow: hidden;
+    position: absolute;
+}
+
+.showcase_txtslide-container {
+    background-color: red;
+    height: 3.5rem;
 }
 
 .showcase_txtslide-item {
+
     animation: textmove 5s linear infinite;
 
 }
