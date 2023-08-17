@@ -172,23 +172,35 @@ a {
     padding-bottom: 1.5rem;
 }
 
+
 .showcase_section-title h4 {
     margin: 0;
     padding: 0;
 }
 
-.showcase_section-title div {
+.showcase_section-title li {
     color:#723fff;
     font-weight: 800;
 }
 
 .showcase_section-slide ul {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     gap: 2rem;
     max-width: 2750px;
     margin: 0 auto;
+
+    animation: bannermove 40s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 .showcase_section-slide > ul > li {
@@ -206,6 +218,35 @@ a {
     height: 100%;
 }
 
+.slide-img:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0) 100%);
+}
+
+.showcase_txtslide-wrap {
+    height: 3.5rem;
+    overflow: hidden;
+
+}
+
+.showcase_txtslide-item {
+    animation: textmove 5s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateZ(0) }
+    to { transform: translate3d(-100%, 0, 0) }}
+
+@keyframes textmove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
 
 .slide-txt {
     position: absolute;
@@ -250,7 +291,7 @@ a {
     grid-auto-flow:column; */
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .genre_item {
@@ -355,16 +396,17 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    height: 38.25rem;
 }
 
 .how-L {
     background-image: url(/img/how_back.jpg);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: auto;
 
     display: flex;
     align-items: center;
+
 }
 
 .how-L span{
@@ -373,6 +415,19 @@ a {
     font-size: 3rem;
     line-height: 3rem;
     color: #FFF;
+}
+
+
+.how_R {
+    height: 628px;
+    display: flex;
+    flex-direction: column;
+}
+
+.how_R-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 
