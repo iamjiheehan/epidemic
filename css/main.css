@@ -170,8 +170,8 @@ a {
     color: #FFF;
     text-align: center;
     padding-bottom: 1.5rem;
+    overflow: hidden;
 }
-
 
 .showcase_section-title h4 {
     margin: 0;
@@ -183,9 +183,12 @@ a {
     font-weight: 800;
 }
 
+.showcase_section-slide {
+    overflow: hidden;
+}
+
 .showcase_section-slide ul {
     position: relative;
-    /* overflow: hidden; */
     display: flex;
     gap: 2rem;
     max-width: 2750px;
@@ -206,7 +209,6 @@ a {
 .showcase_section-slide > ul > li {
     position: relative;
     border-radius: 0.4rem;
-    /* overflow: hidden; */
 }
 
 .slide-img {
@@ -228,11 +230,11 @@ a {
 .showcase_txtslide-wrap {
     height: 3.5rem;
     overflow: hidden;
-
 }
 
 .showcase_txtslide-item {
     animation: textmove 5s linear infinite;
+
 }
 
 @keyframes marquee {
