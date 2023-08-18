@@ -276,6 +276,7 @@
         height: 700px;
         display: flex;
         align-items: center;
+        margin-left: 4rem;
     }
 
     .how-L span {
@@ -284,6 +285,9 @@
         font-size: 3rem;
         line-height: 3rem;
         color: #fff;
+        position: absolute;
+        left: -5rem;
+        top: 20rem;
     }
 
     .how-R {
