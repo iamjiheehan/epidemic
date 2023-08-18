@@ -80,7 +80,7 @@
 
     .wrap {
         padding: 80px 64px;
-        margin: 0px 106px;
+        /* margin: 0px 106px; */
     }
 
     .relative {
@@ -165,7 +165,8 @@
         display: flex;
         justify-content: space-between;
         gap: 4rem;
-
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .footer-first_L {
@@ -223,7 +224,8 @@
     .select-box p {
         text-align: left;
         font-weight: bold;
-        font-size: 1rem
+        font-size: 1rem;
+        margin:1rem 0 0 0;
     }
     .select-lang {
         position: absolute;

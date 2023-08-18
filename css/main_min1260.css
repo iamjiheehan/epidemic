@@ -326,9 +326,11 @@
     }
 
     .item-month {
+        text-align: left;
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-left: 0;
     }
 
     .item-price {
@@ -437,6 +439,8 @@
     .Royalty_section {
         display: flex;
         gap: 2rem;
+        flex-direction: row;
+        align-items: center;
     }
 
     .royalty-L {
@@ -449,6 +453,14 @@
     .royalty-R {
         display: flex;
         align-items: center;
+        height: 392px;
+    }
+
+    .royalty-R h2 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 3rem;
+        line-height: 3.5rem;
     }
 
     .royal_L-item a {
@@ -465,7 +477,6 @@
     .last_section {
         display: grid;
         grid-template-columns: 2fr 9fr;
-        margin: auto 4rem;
     }
 
     .last-L {
@@ -473,10 +484,15 @@
         position: relative;
     }
 
+    .last-R {
+        height: auto;
+    }
+
+
     .L-txt_wrap {
         width: 30rem;
         position: absolute;
-        top: 50%;
+        top: 90%;
         /* left: 2rem; */
         left: 0;
         transform: translateY(-50%);
