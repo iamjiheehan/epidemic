@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-
-@media (min-width:600px) {
-
+@media (min-width: 600px) {
     body {
         background-color: #0f0f0f;
         font-family: "Roboto", sans-serif;
@@ -13,7 +11,9 @@
         src: url("/font/Roboto-Regular.ttf");
     }
 
-    ul, ol, li {
+    ul,
+    ol,
+    li {
         list-style: none;
         padding-left: 0;
     }
@@ -84,8 +84,14 @@
         color: #878787;
     }
 
-    .white, p, h1, span, h3, h2, label {
-        color: #FFF;
+    .white,
+    p,
+    h1,
+    span,
+    h3,
+    h2,
+    label {
+        color: #fff;
     }
 
     .center {
@@ -94,9 +100,8 @@
 
     a {
         text-decoration: none;
-        color: #FFF;
+        color: #fff;
     }
-
 
     .wid40 {
         min-height: 40px;
@@ -105,7 +110,6 @@
     /* ---------------------common properties------------------------ */
 
     /* ---------------------------  nav start----------------------- */
-
 
     .main_logo-txt {
         width: 167px;
@@ -126,55 +130,51 @@
         background-color: #3959ff;
         border-radius: 2px;
         padding: 0.8rem 1rem;
-        color: #FFF;
+        color: #fff;
     }
 
-
     .btn-read {
-        background-color: #FFFFFF1E;
+        background-color: #ffffff1e;
         border-radius: 2px;
         padding: 0.8rem 1rem;
-        color: #FFF;
+        color: #fff;
     }
 
     .btn-read:hover {
-        background-color: rgba(255,255,255,.11765);
+        background-color: rgba(255, 255, 255, 0.11765);
     }
 
     .btn-read:active {
-        background-color: rgba(255,255,255,.20784);
+        background-color: rgba(255, 255, 255, 0.20784);
     }
 
     /* --------------------------- Footer start----------------------- */
 
-
     .footer-first {
-        /* background-color: tomato; */
         display: flex;
         justify-content: space-between;
-        gap: 4rem;
-
+        /* gap: 4rem; */
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .footer-first_L {
         width: 320px;
     }
 
-    .footer-first_L svg{
-        width: 40px;
-        height: 40px;
-        margin-bottom: 1.25rem;
+    .footer-first_L svg {
+        display: none;
     }
 
     .select-box {
         min-width: initial;
         max-width: 320px;
         min-height: 56px;
-        background-color: #FFFFFF1F;
+        background-color: #ffffff1f;
         width: 100%;
         height: 3.5rem;
         /* padding: 0px 3rem 0px 1rem; */
-        padding:0.7rem 3rem 0.5rem 1rem;
+        padding: 0.7rem 3rem 0.5rem 1rem;
         display: flex;
         border: none;
         line-height: 1.5;
@@ -182,17 +182,16 @@
         border-radius: 2px;
     }
 
-
     .dropdown-submenu {
         display: flex;
         flex-direction: column;
-        background-color: #FFFFFF1F;
+        background-color: #ffffff1f;
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
     }
 
     .dropdown-submenu a {
-        padding:0.7rem 3rem 0.5rem 1rem;
+        padding: 0.7rem 3rem 0.5rem 1rem;
     }
 
     .dropdown-submenu a:hover {
@@ -212,7 +211,7 @@
     .select-box p {
         text-align: left;
         font-weight: bold;
-        font-size: 1rem
+        font-size: 1rem;
     }
     .select-lang {
         position: absolute;
@@ -223,8 +222,7 @@
         letter-spacing: 0.5px;
     }
 
-
-    .arr-down{
+    .arr-down {
         position: absolute;
         pointer-events: none;
         width: 1.8rem;
@@ -247,21 +245,31 @@
     }
 
     .footer-first_R li {
-        min-height:40px;
-        min-width:40px;
+        min-height: 40px;
+        min-width: 40px;
     }
 
     .footer-first_R h3 {
-        margin: 0 0 1.3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 0 0 1.25rem;
     }
 
     .footer-second {
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
+        gap: 2rem;
     }
 
-    .footer-second_L span{
+    .footer-second_R{
+        margin-top: 2rem;
+    }
+
+    .footer-second_L span {
         letter-spacing: 0.8px;
     }
 
@@ -271,5 +279,15 @@
         min-height: 48px;
         min-width: 48px;
         align-items: center;
+        margin: 0.2rem;
+    }
+
+    .footer-second_R a {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #202020;
     }
 }
