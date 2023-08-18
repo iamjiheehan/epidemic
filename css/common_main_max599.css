@@ -154,9 +154,8 @@
     .footer-first {
         display: flex;
         justify-content: space-between;
-        /* gap: 4rem; */
         flex-direction: column-reverse;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .footer-first_L {
@@ -239,6 +238,7 @@
     .footer-first_R {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         -moz-column-gap: 4rem;
         column-gap: 4rem;
         row-gap: 3.5rem;
@@ -249,6 +249,7 @@
         min-height: 40px;
         min-width: 40px;
     }
+
 
     .footer-first_R h3 {
         font-size: 1rem;
@@ -290,5 +291,16 @@
             height: 48px;
             border-radius: 50%;
             background-color: #202020;
+    }
+
+    .footer-second_R ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        list-style-type: none;
+        max-width: calc((48px * 4) + 4rem);
+        margin: 0;
+        padding: 0;
     }
 }

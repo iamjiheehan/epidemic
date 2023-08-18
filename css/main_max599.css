@@ -370,7 +370,9 @@
     .price_title {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .item-month {
@@ -436,17 +438,12 @@
     }
 
     .price_item-flex {
-        /* display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: space-between; */
-
         display: grid;
         grid-template-columns: 1fr;
         -moz-column-gap: 2rem;
         column-gap: 2rem;
         row-gap: 2rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 
     .price_item-wrap {
@@ -454,8 +451,7 @@
         padding: 1.5rem;
         justify-content: space-between;
         position: relative;
-        /* min-height: 38.1875rem;
-        max-width: 337px; */
+
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -496,7 +492,8 @@
 
     .royalty-L {
         display: grid;
-        grid-template-columns: repeat(3, minmax(216px, 1fr));
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+        grid-template-rows : 1fr 1fr;
         column-gap: 2rem;
         row-gap: 2rem;
     }
@@ -520,6 +517,7 @@
     .last_section {
         display: flex;
         flex-direction: column-reverse;
+        padding: 1rem;
     }
 
     .last-L {
@@ -527,9 +525,7 @@
     }
 
     .L-txt_wrap {
-        width: 30rem;
         top: 50%;
-        /* left: 2rem; */
         left: 0;
         transform: translateY(-50%);
         z-index: 1;
@@ -541,8 +537,8 @@
         gap: 0.5rem;
         color: #3959ff;
         font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .L-txt_wrap h2 {
