@@ -137,12 +137,68 @@
         margin: 0;
         font-size: 0.875rem;
         line-height: 1.5rem;
+        font-weight: 500;
     }
 
+    /* --------------------------- hide_brand_item start----------------------- */
+
+    .hide_brand_spanWrap {
+        display: flex;
+        gap: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        position: absolute;
+        width: 1800px;
+        height: 60px;
+
+        animation: brandmove 60s linear infinite;
+    }
+
+
+
+    @keyframes brandmove {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .hide_brand_section svg {
+        width: 100%;
+        height: auto;
+        max-width: 180px;
+        max-height: 32px;
+    }
+
+    .hide_brand_tempBox::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: -2rem;
+        right: -2rem;
+        width: 150px;
+        z-index: 1;
+        background: linear-gradient(to left, #0F0F0F, transparent);
+    }
+
+    .hide_brand_tempBox::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: -2rem;
+        left: -2rem;
+        width: 150px;
+        z-index: 1;
+        background: linear-gradient(to right, #0F0F0F, transparent);
+    }
     /* --------------------------- brand_item start----------------------- */
 
     .brand_section {
-        display: grid;
+        /* display: grid; */
+        display: none;
         -moz-column-gap: 2rem;
         column-gap: 2rem;
         row-gap: 2.5rem;
