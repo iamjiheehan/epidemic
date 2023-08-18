@@ -229,23 +229,24 @@ a {
 
 .showcase_txtslide-wrap {
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
+    background-color: gold;
 }
 
 .showcase_txtslide-container {
     background-color: red;
-    height: 3.5rem;
+    height: 5rem;
 }
 
 .showcase_txtslide-item {
-
+    display: inline-block;
     animation: textmove 5s linear infinite;
 
 }
 
 @keyframes marquee {
     from { transform: translateZ(0) }
-    to { transform: translate3d(-100%, 0, 0) }}
+    to { transform: translate3d(-200%, 0, 0) }}
 
 @keyframes textmove {
     0% {
