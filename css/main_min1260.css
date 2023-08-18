@@ -272,8 +272,8 @@
         background-image: url(/img/how_back.jpg);
         background-repeat: no-repeat;
         background-position: right center;
-        background-size: auto;
-
+        background-size: cover;
+        height: 700px;
         display: flex;
         align-items: center;
     }
