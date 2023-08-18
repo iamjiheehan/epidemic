@@ -251,6 +251,13 @@
         gap: 1rem;
     }
 
+
+    /* ---------------------hide brand section start -------------------------*/
+    .hide_brand_section {
+        display: none;
+    }
+
+
     /* --------------------------- how section----------------------- */
 
     .how_section {

@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-
-
-@media (min-width:1260px) {
+@media (min-width: 1260px) {
     /* --------------------------- welcome Section start----------------------- */
 
     .welcome_section {
@@ -17,7 +15,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-
     }
 
     /* --------------------------- Showcase Section start----------------------- */
@@ -25,7 +22,7 @@
     .showcase_section-title {
         font-size: 3rem;
         /* line-height: 3.5rem; */
-        color: #FFF;
+        color: #fff;
         text-align: center;
         padding-bottom: 1.5rem;
         overflow: hidden;
@@ -37,7 +34,7 @@
     }
 
     .showcase_section-title li {
-        color:#723fff;
+        color: #723fff;
         font-weight: 800;
     }
 
@@ -79,7 +76,7 @@
     }
 
     .slide-img:after {
-        content: '';
+        content: "";
         position: absolute;
         inset: 0;
         background: linear-gradient(0deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0) 100%);
@@ -102,8 +99,13 @@
     }
 
     @keyframes marquee {
-        from { transform: translateZ(0) }
-        to { transform: translate3d(-200%, 0, 0) }}
+        from {
+            transform: translateZ(0);
+        }
+        to {
+            transform: translate3d(-200%, 0, 0);
+        }
+    }
 
     @keyframes textmove {
         0% {
@@ -152,6 +154,7 @@
     .genre_item-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .genre_item {
@@ -174,14 +177,14 @@
         width: 100%;
     }
 
-    .genre_item-btn button{
+    .genre_item-btn button {
         white-space: nowrap;
         border: none;
         width: 3rem;
         height: 3rem;
         cursor: pointer;
         border-radius: 50%;
-        background: #FFF;
+        background: #fff;
     }
 
     .genre_item-btn {
@@ -190,7 +193,7 @@
         left: 50%;
     }
 
-    .genre_item-txt p{
+    .genre_item-txt p {
         margin: 0.2rem auto;
         font-weight: 100;
     }
@@ -203,6 +206,12 @@
 
     .soundtrack_section {
         padding-bottom: 5rem;
+    }
+
+    .soundtrack_section p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .soundtrack_section ul {
@@ -226,7 +235,6 @@
         padding: 1.5rem;
     }
 
-
     .soundtrack_item-txt span {
         font-weight: 500;
         letter-spacing: -0.02em;
@@ -238,12 +246,21 @@
         gap: 1rem;
     }
 
-    .soundtrack_item-img img {
-        width: 100%;
-        height: 100%;  
+    .soundtrack_item-img {
+        margin-top: 0;
     }
 
-    /* --------------------------- how section----------------------- */
+    .soundtrack_item-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ---------------------hide brand section start -------------------------*/
+    .hide_brand_section {
+        display: none;
+    }
+
+    /* ---------------------------- how section------------------------------ */
 
     .how_section {
         display: grid;
@@ -259,32 +276,30 @@
 
         display: flex;
         align-items: center;
-
     }
 
-    .how-L span{
+    .how-L span {
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 3rem;
         line-height: 3rem;
-        color: #FFF;
+        color: #fff;
     }
 
-
-    .how_R {
+    .how-R {
         height: 628px;
         display: flex;
         flex-direction: column;
+        gap: 1rem;
     }
 
     .how_R-item {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
     }
 
-    .how_R-item h3{
+    .how_R-item h3 {
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 2.5rem;
@@ -309,10 +324,10 @@
     .item-month {
         font-weight: 500;
         font-size: 1rem;
-        line-height: 1.5rem
+        line-height: 1.5rem;
     }
 
-    .item-price{
+    .item-price {
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 2.5rem;
@@ -322,7 +337,6 @@
         font-weight: 500;
         font-size: 1.25rem;
         line-height: 1.5rem;
-
     }
 
     .item-list span {
@@ -341,7 +355,7 @@
     }
 
     .price_label-wrap input {
-        display:none;
+        display: none;
     }
 
     input[type="radio"]:checked + label {
@@ -354,7 +368,7 @@
         padding: 0.25rem 2rem;
         text-align: center;
         cursor: pointer;
-        background-color: #FFF;
+        background-color: #fff;
     }
 
     input[type="radio"] + label {
@@ -363,7 +377,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 2px;
-        color: #FFF;
+        color: #fff;
         padding: 0.25rem 1rem;
         text-align: center;
         cursor: pointer;
@@ -397,7 +411,6 @@
         flex-direction: column;
     }
 
-
     .price_item-second {
         width: 100%;
         gap: 1rem;
@@ -412,7 +425,7 @@
         font-weight: 500;
         font-size: 0.75rem;
         line-height: 1rem;
-        color:  rgba(255, 255, 255, 0.50);
+        color: rgba(255, 255, 255, 0.5);
     }
 
     /* ---------------------------Royalty Section start----------------------- */
@@ -434,20 +447,20 @@
         align-items: center;
     }
 
-    .royal_L-item a{
+    .royal_L-item a {
         display: flex;
         flex-direction: column;
     }
 
-    .royal_L-item img { 
-    margin-bottom: 0.5rem;
+    .royal_L-item img {
+        margin-bottom: 0.5rem;
     }
 
     /* ---------------------------Right Section start----------------------- */
 
     .last_section {
         display: grid;
-        grid-template-columns: 2fr 9fr; 
+        grid-template-columns: 2fr 9fr;
         margin: auto 4rem;
     }
 

@@ -1,9 +1,7 @@
 @charset "utf-8";
 
 
-
 @media (min-width:1260px) {
-
     * {
         margin: 0;
         box-sizing: border-box;
@@ -37,6 +35,7 @@
         letter-spacing: -0.02em;
         font-size: 3rem;
         line-height: 3.5rem;
+        margin-bottom: 24px;
     }
 
     h3 {
@@ -51,6 +50,9 @@
         font-weight: bold;
         font-size: 1.2rem;
         line-height: 1.5rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content {
