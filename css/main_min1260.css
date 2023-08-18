@@ -87,8 +87,9 @@
 
     .showcase_txtslide-wrap {
         overflow: hidden;
-        /* position: absolute; */
         background-color: gold;
+        display: flex;
+        flex-direction: column;
     }
 
     .showcase_txtslide-container {
