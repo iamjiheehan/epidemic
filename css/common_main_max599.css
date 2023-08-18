@@ -302,11 +302,4 @@
         margin: 0;
         padding: 0;
     }
-
-    .temp {
-        width: 100%;
-        display: flex;
-        justify-content: center
-    }
-
 }
