@@ -155,8 +155,6 @@
         animation: brandmove 60s linear infinite;
     }
 
-
-
     @keyframes brandmove {
         0% {
             transform: translate(0, 0);
@@ -174,25 +172,25 @@
     }
 
     .hide_brand_tempBox::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: -2rem;
         right: -2rem;
         width: 150px;
         z-index: 1;
-        background: linear-gradient(to left, #0F0F0F, transparent);
+        background: linear-gradient(to left, #0f0f0f, transparent);
     }
 
     .hide_brand_tempBox::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: -2rem;
         left: -2rem;
         width: 150px;
         z-index: 1;
-        background: linear-gradient(to right, #0F0F0F, transparent);
+        background: linear-gradient(to right, #0f0f0f, transparent);
     }
     /* --------------------------- brand_item start----------------------- */
 
@@ -218,26 +216,23 @@
     /* --------------------------- Genre Section start----------------------- */
 
     .genre_item-wrap {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(96px, 1fr));
+        gap: 1rem;
     }
 
     .genre_item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* width: 35%; */
-        /* flex-grow: 1; */
+    }
+
+    .genre_section-txt {
+        margin: 20px 0 30px;
     }
 
     .genre_item-img {
         position: relative;
-        max-width: 337px;
-        max-height: 337px;
-        min-width: 5.75rem;
-        min-height: 5.75rem;
     }
 
     .genre_item-img img {
@@ -274,7 +269,11 @@
     /* --------------------------- Soundtrack Section start----------------------- */
 
     .soundtrack_section {
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .soundtrack_section p {
+        text-align: left;
     }
 
     .soundtrack_section ul {
@@ -286,7 +285,6 @@
 
     .soundtrack_item {
         position: relative;
-        height: 280px;
         width: auto;
         overflow: hidden;
     }
@@ -324,10 +322,10 @@
     }
 
     .how-L {
-        height: 589px;
+        height: 399px;
         background-image: url(/img/how_back.jpg);
         background-repeat: no-repeat;
-        background-position: top right;
+        background-size: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -336,13 +334,15 @@
 
     .how-L span {
         font-weight: 600;
-        letter-spacing: -0.02em;
-        font-size: 3rem;
-        line-height: 3rem;
+
         color: #fff;
-        top: 60%;
-        left: 8rem;
+        bottom: 1rem;
+        left: 1rem;
         position: absolute;
+
+        letter-spacing: -0.02em;
+        font-size: 2rem;
+        line-height: 2.375rem;
     }
 
     .how_R {
@@ -356,13 +356,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .how_R-item h3 {
-        font-weight: 600;
-        letter-spacing: -0.02em;
-        font-size: 2.5rem;
-        line-height: 3rem;
     }
 
     .how_R-item p {

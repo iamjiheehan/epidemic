@@ -29,17 +29,18 @@
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 3rem;
-        line-height: 3.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    h3 {
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 2rem;
         line-height: 2.375rem;
+    }
+
+    h3 {
         margin-bottom: 0.5rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
     }
 
     p {
@@ -68,10 +69,11 @@
         justify-content: space-between;
         align-items: center;
         background-color: #0f0f0f;
+        padding: 0.7rem;
     }
 
     .wrap {
-        padding: 40px 32px;
+        padding: 40px 10px;
     }
 
     .relative {
