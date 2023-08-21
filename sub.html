@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="/css/main_min1260.css" />
     </head>
     <body>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
         <nav>
             <div class="main_logo white">
                 <div class="main_logo-txt">
@@ -298,5 +299,10 @@
                 </div>
             </div>
         </footer>
+        <script>
+            $(".select-box").click(function (e) {
+                $(".dropdown-submenu").toggle();
+            })
+        </script>
     </body>
 </html>

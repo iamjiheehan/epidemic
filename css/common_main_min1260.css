@@ -202,7 +202,7 @@
         background-color: #FFFFFF1F;
         width: 100%;
         height: 3.5rem;
-        padding:0.7rem 3rem 0.5rem 1rem;
+        padding:0.7rem 3rem 0.7rem 1rem;
         display: flex;
         border: none;
         line-height: 1.5;
@@ -212,19 +212,13 @@
 
 
     .dropdown-submenu {
-        /* display: flex; */
         display: none;
         flex-direction: column;
         background-color: #FFFFFF1F;
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
+
     }
 
-    .dropdown-submenu a {
-        padding:0.7rem 3rem 0.5rem 1rem;
-    }
-
-    .dropdown-submenu a:hover {
+    .submenu-white:hover {
         background-color: rgba(255, 255, 255, 0.12);
     }
 
@@ -232,6 +226,7 @@
         font-size: 1rem;
         margin: 0;
         font-weight: bold;
+        padding-left: 1rem;
     }
 
     .select-box:hover {
@@ -242,7 +237,7 @@
         text-align: left;
         font-weight: bold;
         font-size: 1rem;
-        margin:1rem 0 0 0;
+        margin:0.8rem 0 0 0;
     }
     .select-lang {
         position: absolute;
