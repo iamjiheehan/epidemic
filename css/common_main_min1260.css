@@ -55,6 +55,13 @@
         margin-right: auto;
     }
 
+    .light_grey {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #878787;
+    }
+
     .content {
         max-width: 60ch;
         margin: 2rem auto;
@@ -127,9 +134,13 @@
     }
 
 
+
     /* ---------------------common properties------------------------ */
 
 
+    .sub-wrap {
+        padding: 0 4rem;
+    }
 
     /* ---------------------------  nav start----------------------- */
 
