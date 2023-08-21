@@ -728,7 +728,12 @@
         align-items: center;
     }
 
-    .btn-minus, .sub_qna-txt {
+    .hide{
         display: none;
     }
+
+    .active{
+        display: inline-block;
+    }
+
 }

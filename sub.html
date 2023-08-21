@@ -187,30 +187,30 @@
                 <div class="sub_qna-item">
                     <h2>
                         <span>Who can sign up for the Commercial Plan?</span>
-                        <button class="btn-minus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
+                        <button class="btn-minus hide"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
                         <button class="btn-plus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 13V21H13V13H21V11H13V3H11V11H3V13H11Z"></path></svg></button>
                     </h2>
-                    <div class="sub_qna-txt">
+                    <div class="sub_qna-txt hide">
                         <p class="light_grey">The Commercial Plan is for freelancers and businesses soundtracking commercial productions, excluding cinema, TV shows or TV ads. If you need coverage for those types of content, or work for a major publisher (more than USD five million in annual turnover) or corporation (more than USD 50 million in annual turnover), please contact Enterprise sales to get a customized license.</p>
                     </div>
                 </div>
                 <div class="sub_qna-item">
                     <h2>
                         <span>Who can sign up for the Commercial Plan?</span>
-                        <button class="btn-minus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
+                        <button class="btn-minus hide"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
                         <button class="btn-plus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 13V21H13V13H21V11H13V3H11V11H3V13H11Z"></path></svg></button>
                     </h2>
-                    <div class="sub_qna-txt">
+                    <div class="sub_qna-txt hide">
                         <p class="light_grey">The Commercial Plan gives you full sublicensing rights. If you produce content for others to publish on their channels and they want to avoid copyright claims, you simply add the URLs of the published video and we'll clear them for you.</p>
                     </div>
                 </div>
                 <div class="sub_qna-item">
                     <h2>
                         <span>Who can sign up for the Commercial Plan?</span>
-                        <button class="btn-minus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
+                        <button class="btn-minus hide"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 13H3V11H21Z"></path></svg></button>
                         <button class="btn-plus"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 13V21H13V13H21V11H13V3H11V11H3V13H11Z"></path></svg></button>
                     </h2>
-                    <div class="sub_qna-txt">
+                    <div class="sub_qna-txt hide">
                         <p class="light_grey">Yes, as long as it’s an online campaign and you’re not a major publisher (more than USD five million in annual turnover) or corporation (more than USD 50 million in annual turnover), or government entity.                        </p>
                     </div>
                 </div>
@@ -300,9 +300,30 @@
             </div>
         </footer>
         <script>
+            
             $(".select-box").click(function (e) {
                 $(".dropdown-submenu").toggle();
             })
+
+            $(document).ready(function() {
+                $(".btn-plus").click(function() {
+                    const parentItem = $(this).closest('.sub_qna-item');
+                    
+                    parentItem.find('.sub_qna-txt').toggleClass('hide');
+
+                    parentItem.find('.btn-plus').toggleClass('hide');
+                    parentItem.find('.btn-minus').toggleClass('hide');
+                });
+
+                $(".btn-minus").click(function() {
+                    const parentItem = $(this).closest('.sub_qna-item');
+                    
+                    parentItem.find('.sub_qna-txt').toggleClass('hide');
+
+                    parentItem.find('.btn-plus').toggleClass('hide');
+                    parentItem.find('.btn-minus').toggleClass('hide');
+                });
+            });
         </script>
     </body>
 </html>
