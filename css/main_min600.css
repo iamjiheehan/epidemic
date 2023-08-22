@@ -649,13 +649,18 @@
     .sub_soundtrack-txt p{
         margin: 1rem 0;
     }
+
+    .sub_soundtrack-txt p, .sub_soundtrack-txt h2{
+        padding-left: 0;
+
+    }
     /* --------------------------------------- Sub Column Section Start ---------------------------------------------*/
 
     .sub_column-wrap {
         display: flex;
         gap: 2rem;
-
         margin-bottom: 6rem;
+        align-items: flex-start;
     }
 
     .sub_column-flex p {
@@ -752,6 +757,10 @@
     .sub_qna-item {
         padding: 2rem 0;
         border-bottom: 1px solid #878787;
+    }
+
+    .sub_qna-item p {
+        padding-left: 0;
     }
 
     .sub_qna-txt {
