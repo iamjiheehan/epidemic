@@ -474,11 +474,10 @@
         padding: 1.5rem;
         justify-content: space-between;
         position: relative;
-
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .price_item-first {
