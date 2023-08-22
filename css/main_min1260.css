@@ -44,6 +44,9 @@
         font-weight: 800;
     }
 
+    .showcase_section-slide {
+        overflow: hidden;
+    }
 
     .showcase_section-slide ul {
         position: relative;
@@ -69,6 +72,7 @@
     .showcase_section-slide > ul > li {
         position: relative;
         border-radius: 0.4rem;
+
     }
 
     .slide-img {

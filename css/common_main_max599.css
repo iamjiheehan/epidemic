@@ -124,11 +124,11 @@
         justify-content: space-between;
         align-items: center;
         background-color: #0f0f0f;
+        padding: 0.5rem 4rem;
     }
 
     .main_logo-txt {
         max-width: 167px;
-        display: flex;
     }
 
     .main_logo-img {
