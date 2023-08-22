@@ -170,12 +170,6 @@
         margin-bottom: 48px;
     }
 
-    .footer-first {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
 
     .footer-icon {
         display: none;
@@ -200,7 +194,7 @@
         display: flex;
         border: none;
         line-height: 1.5;
-
+        align-items: center;
     }
 
     .dropdown-submenu {

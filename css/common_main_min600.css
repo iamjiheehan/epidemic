@@ -172,8 +172,9 @@
 
     .footer-first {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         gap: 4rem;
+        flex-direction: row-reverse;
         align-items: flex-start;
     }
 
