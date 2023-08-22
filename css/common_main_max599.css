@@ -177,6 +177,7 @@
 
     .footer-first_L {
         width: 320px;
+        margin: 0 auto;
     }
 
     .select_wrap {
@@ -222,6 +223,7 @@
     .select-box:hover {
         cursor: pointer;
     }
+
 
     .select-box p {
         text-align: left;
