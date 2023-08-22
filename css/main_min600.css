@@ -251,12 +251,10 @@
         gap: 1rem;
     }
 
-
     /* ---------------------hide brand section start -------------------------*/
     .hide_brand_section {
         display: none;
     }
-
 
     /* --------------------------- how section----------------------- */
 
@@ -321,10 +319,23 @@
         align-items: center;
     }
 
+    .price_title h2 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 2rem;
+        line-height: 2.375rem;
+        padding-left: 0;
+    }
+
+    .price_title {
+        padding-bottom: 3rem;
+    }
+    
     .item-month {
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .item-price {
@@ -332,17 +343,35 @@
         letter-spacing: -0.02em;
         font-size: 2.5rem;
         line-height: 3rem;
+        padding-bottom: 1rem;
     }
+
+    .item-price-last {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 2rem;
+        line-height: auto;
+        padding-bottom: 1rem;
+
+    }
+
     .item-personal {
         font-weight: 500;
         font-size: 1.25rem;
         line-height: 1.5rem;
+
+        margin-bottom: 24px;
     }
 
     .item-list span {
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+
+    .item-list ul {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
     }
 
     .price_label-wrap {
@@ -384,17 +413,12 @@
     }
 
     .price_item-flex {
-        /* display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: space-between; */
-
         display: grid;
         grid-template-columns: 1fr;
         -moz-column-gap: 2rem;
         column-gap: 2rem;
         row-gap: 2rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .price_item-wrap {
@@ -402,8 +426,7 @@
         padding: 1.5rem;
         justify-content: space-between;
         position: relative;
-        /* min-height: 38.1875rem;
-        max-width: 337px; */
+
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -509,5 +532,245 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    /* --------------------------------------- sub page main ---------------------------------------------*/
+
+    .sub_welcome-wrap {
+        background-image: url(/img/sub_main.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* width: 1440px;
+        height: 720px; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub_welcome-txt {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        z-index: 1;
+
+        max-width: 50%;
+        padding-top: 14rem;
+        margin-bottom: 2.5rem;
+
+        padding-left: 3.875rem;
+        padding-right: 3.875rem;
+    }
+
+    .sub_welcome-txt h1 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .sub_welcome-txt h3 {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    /* --------------------------------------- Sub Page Second Section Start ---------------------------------------------*/
+
+    .sub_second-wrap {
+        padding: 12rem 0 5rem;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sub_second-wrap h3:first-child {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    .sub_second-wrap h3:last-child {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 500;
+    }
+
+    /* --------------------------------------- Sub Page Plan Section Start ---------------------------------------------*/
+    .sub_plan-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+        align-content: stretch;
+        margin: 5rem 0;
+    }
+
+    .sub_plan-wrap h2, .sub_soundtrack-wrap h2 {
+        letter-spacing: -0.02em;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 600;
+        margin: 4px 0px 33.2px;
+    }
+
+    .sub_plan-img {
+        grid-row: 1 / auto;
+    }
+
+    .sub_plan-img img, .sub_soundtrack-img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-fit: inherit;
+        object-position: inherit;
+    }
+
+    /* --------------------------------------- Sub SoundTrack Section Start ---------------------------------------------*/
+
+    .sub_soundtrack-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: start;
+        align-content: stretch;
+        margin: 6rem 0;
+    }
+
+
+    .sub_soundtrack-txt p{
+        margin: 1rem 0;
+    }
+    /* --------------------------------------- Sub Column Section Start ---------------------------------------------*/
+
+    .sub_column-wrap {
+        display: flex;
+        gap: 2rem;
+
+        margin-bottom: 6rem;
+    }
+
+    .sub_column-flex p {
+        padding-left: 0;
+        padding-bottom: 3rem;
+    }
+
+    .sub_column-wrap div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .sub_column-wrap h3 {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 2.5rem;
+        line-height: 3rem;
+
+        margin-bottom: 24px;
+        height: 6rem;
+    }
+
+    .sub_column-wrap h4 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        color: #fff;
+
+        margin-bottom: 24px;
+    }
+
+    .sub_column-wrap a {
+        text-decoration: none;
+        box-sizing: border-box;
+        outline: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        min-height: 2.75rem;
+        padding: 0.25rem 0px;
+        border: 0px;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+        background: transparent;
+    }
+
+    .sub_column-wrap a:hover {
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: calc(0.25rem - 2px);
+    }
+
+    /* --------------------------------------- Sub QnA Section Start ---------------------------------------------*/
+
+    .sub_qna-wrap {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .sub_qna-wrap h2 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .sub_qna-wrap span {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .sub_qna-wrap p {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .sub_qna-wrap button {
+        min-width: 42px;
+        min-height: 42px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 1.5rem;
+    }
+
+    .sub_qna-item {
+        padding: 2rem 0;
+        border-bottom: 1px solid #878787;
+    }
+
+    .sub_qna-txt {
+        max-width: 640px;
+        margin-top: 2rem;
+        line-height: 1.4rem;
+    }
+
+    .sub_qna-item h2 {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .active {
+        display: inline-block;
     }
 }

@@ -340,7 +340,7 @@
         margin-left: 0;
     }
 
-    .item-price {
+    .item-price, .item-price-last {
         font-weight: 600;
         letter-spacing: -0.02em;
         font-size: 2.5rem;
