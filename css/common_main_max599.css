@@ -166,6 +166,10 @@
 
     /* --------------------------- Footer start----------------------- */
 
+    footer {
+        margin-bottom: 48px;
+    }
+
     .footer-first {
         display: flex;
         justify-content: space-between;
