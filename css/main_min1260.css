@@ -32,7 +32,6 @@
         color: #fff;
         text-align: center;
         padding-bottom: 1.5rem;
-        overflow: hidden;
     }
 
     .showcase_section-title h4 {
@@ -45,9 +44,6 @@
         font-weight: 800;
     }
 
-    .showcase_section-slide {
-        overflow: hidden;
-    }
 
     .showcase_section-slide ul {
         position: relative;
@@ -58,6 +54,8 @@
 
         animation: bannermove 40s linear infinite;
     }
+
+    
 
     @keyframes bannermove {
         0% {
@@ -89,39 +87,78 @@
         background: linear-gradient(0deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0) 100%);
     }
 
+
+ /* --------------showcase section Column Banner animation start ----------- */
+
     .showcase_txtslide-wrap {
+        display: grid;
         overflow: hidden;
-        background-color: gold;
-        display: flex;
-        flex-direction: column;
     }
 
     .showcase_txtslide-container {
-        background-color: red;
-        height: 5rem;
+        height: auto;
     }
 
     .showcase_txtslide-item {
-        animation: textmove 5s linear infinite;
+        animation: textmove 32s infinite;
+        grid-area: 1 / 1;
+        opacity: 0;
     }
 
-    @keyframes marquee {
-        from {
-            transform: translateZ(0);
-        }
-        to {
-            transform: translate3d(-200%, 0, 0);
-        }
+    .showcase_txtslide-wrap li:nth-child(2) {
+        animation-delay: 4s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(3) {
+        animation-delay: 8s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(4) {
+        animation-delay: 12s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(5) {
+        animation-delay: 16s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(6) {
+        animation-delay: 20s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(7) {
+        animation-delay: 24s;
+    }
+    
+    .showcase_txtslide-wrap li:nth-child(8) {
+        animation-delay: 28s;
     }
 
     @keyframes textmove {
         0% {
-            transform: translate(0, 0);
+            opacity: 0;
+            animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+            transform: translateY(100%);
+        }
+        1.5% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        12.5% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        14% {
+            opacity: 0;
+            animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+            transform: translateY(-100%);
         }
         100% {
-            transform: translate(0, -50%);
+            opacity: 0;
+            transform: translateY(-100%);
         }
     }
+
+ /* --------------showcase section Banner animation finiish ----------- */
 
     .slide-txt {
         position: absolute;
