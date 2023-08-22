@@ -332,6 +332,12 @@
         align-items: center;
     }
 
+        
+    .price_temp {
+        height: 6rem;
+        width: 100%;
+    }
+
     .item-month {
         text-align: left;
         font-weight: 500;
