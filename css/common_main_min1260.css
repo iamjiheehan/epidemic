@@ -86,10 +86,11 @@
         align-items: center;
         background-color: #0f0f0f;
         padding: 0.5rem 4rem;
+        width: 100vw;
     }
 
     .wrap {
-        padding: 80px 64px;
+        padding: 0.5rem 8rem;
         /* margin: 0px 106px; */
     }
 
@@ -152,7 +153,7 @@
 
 
     .sub-wrap {
-        padding: 0 4rem;
+        margin: 0 43.5px;
     }
 
     /* ---------------------------  nav start----------------------- */
@@ -160,6 +161,7 @@
 
     .main_logo-txt {
         width: 167px;
+        font-size: 0;
     }
 
     .main_logo-img {
@@ -176,6 +178,11 @@
 
     /* --------------------------- Footer start----------------------- */
 
+
+    .footer_wrap {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
 
     .footer-first {
         display: flex;
