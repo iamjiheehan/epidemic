@@ -128,12 +128,12 @@
     }
 
     .main_logo-txt {
-        max-width: 167px;
+        width: 167px;
     }
 
     .main_logo-img {
         width: 19.5px;
-        display: inline-block;
+        display: none;
     }
 
     .util {
