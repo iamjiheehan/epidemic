@@ -708,14 +708,19 @@
                 $(".dropdown-submenu").toggle();
             })
 
-            $(".genre_item-img").hover(function (e) {
-                $(".genre_item-btn").addClass("genre_item-hover")
-                $(".genre_item-img").addClass("opacity")
-            }, function (e) {
-                $(".genre_item-btn").removeClass("genre_item-hover")
-                $(".genre_item-img").removeClass("opacity")
-            });
-
+            $(document).ready(function (){
+                $(".genre_item-img").hover(function (e) {
+                    const parentItem = $(this).closest('.genre_item');
+                    parentItem.find('.genre_item-btn').addClass('genre_item-hover');
+                    parentItem.find('.genre_item-img').addClass('opacity');
+                }, function (e) {
+                    const parentItem = $(this).closest('.genre_item');
+                    parentItem.find('.genre_item-btn').removeClass('genre_item-hover');
+                    parentItem.find('.genre_item-img').removeClass('opacity');
+                });
+                }
+            );
+        
         </script>
     </body>
 </html>
