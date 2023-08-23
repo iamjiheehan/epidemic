@@ -345,7 +345,7 @@
 
     .how-L {
         height: 589px;
-        background-image: url(./img/how_back.jpg);
+        background-image: url(../img/how_back.jpg);
         background-repeat: no-repeat;
         background-position: top right;
         display: flex;
@@ -611,7 +611,7 @@
     }
 
     .R_img {
-        background-image: url(./img/last-back.jpg);
+        background-image: url(../img/last-back.jpg);
         height: 100%;
         text-align: center;
         background-size: cover;
@@ -621,7 +621,7 @@
     /* --------------------------------------- sub page main ---------------------------------------------*/
 
     .sub_welcome-wrap {
-        background-image: url(./img/sub_main.avif);
+        background-image: url(../img/sub_main.avif);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
