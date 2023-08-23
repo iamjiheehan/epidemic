@@ -14,7 +14,7 @@
     </head>
     <body>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
-        <!-- <nav>
+        <nav>
             <div class="main_logo white">
                 <div class="main_logo-txt">
                     <a href="index.html">
@@ -435,7 +435,7 @@
                     <p>After signing up, you'll be able to connect your social media channels. All connected channels will be cleared, which means you can publish content with our music without worrying about copyright.</p>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="price_section wrap">
             <div class="price_title">
                     <h2>Our subscriptions</h2>
@@ -450,7 +450,7 @@
                         </div>
                     </fieldset>
             </div>
-            <div class="price_item-flex">
+            <div class="price_item-flex yearly">
                 <div class="price_item-wrap">
                     <div class="price_item">
                         <div class="price_item-first">
@@ -550,7 +550,7 @@
                     </div>
                 </div>
             </div>
-            <div class="price_item-flex hide">
+            <div class="price_item-flex monthly hide">
                 <div class="price_item-wrap">
                     <div class="price_item">
                         <div class="price_item-first">
@@ -812,13 +812,20 @@
         <script>
 
             //요금제 변경창
+
             $(document).ready(function(){
                 $(".price_label-yearly").click(function(){
-                    $(".price_label-yearly").addClass("label-active active");
-                    $(".price_label-monthly").removeClass("label-active active");
-                }), $(".price_label-monthly").click(function(){
-                    $(".price_label-monthly").addClass("label-active active");
-                    $(".price_label-yearly").removeClass("label-active active");
+                    $(".price_label-yearly").addClass("label-active");
+                    $(".price_label-monthly").removeClass("label-active");
+                    $(".monthly").addClass("hide");
+                    $(".yearly").addClass("price_item-flex").removeClass("hide");
+                }), 
+                
+                $(".price_label-monthly").click(function(){
+                    $(".price_label-monthly").addClass("label-active");
+                    $(".price_label-yearly").removeClass("label-active");
+                    $(".yearly").addClass("hide");
+                    $(".monthly").addClass("price_item-flex").removeClass("hide");
                 });
             });
 
