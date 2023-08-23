@@ -473,7 +473,7 @@
     }
 
     .price_label-wrap input {
-        display: none;
+        /* display: none; */
     }
 
     input[type="radio"]:checked + label {

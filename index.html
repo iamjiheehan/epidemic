@@ -14,7 +14,7 @@
     </head>
     <body>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
-        <nav>
+        <!-- <nav>
             <div class="main_logo white">
                 <div class="main_logo-txt">
                     <a href="index.html">
@@ -435,14 +435,20 @@
                     <p>After signing up, you'll be able to connect your social media channels. All connected channels will be cleared, which means you can publish content with our music without worrying about copyright.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="price_section wrap">
             <div class="price_title">
                     <h2>Our subscriptions</h2>
-                    <div class="price_label-wrap">
-                        <input name="toggle" type="radio" checked><label class="price_label-yearly">Pay yearly</label>
-                        <input name="toggle" type="radio"><label class="price_label-monthly">Pay monthly</label>
-                    </div>
+                    <fieldset>
+                        <div class="price_label-wrap">
+                            <label class="price_label-yearly">Pay yearly
+                                <input name="toggle" type="radio" checked>
+                            </label>
+                            <label class="price_label-monthly">Pay monthly
+                                <input name="toggle" type="radio">
+                            </label>
+                        </div>
+                    </fieldset>
             </div>
             <div class="price_item-flex">
                 <div class="price_item-wrap">
@@ -450,28 +456,29 @@
                         <div class="price_item-first">
                             <div><p class="item-personal">Personal</p></div>
                             <span class="item-price">$9<span style="font-size: 0.5em; position: relative; bottom: 0.7em;">.99</span></span>
-                                <p class="item-month">/month</p></div>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
-                                        <span>Publish anywhere online</span>
-                                    </li>
-                                    <li>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
-                                        <span>Monetize 1 channel per platform</span>
-                                    </li>
-                                    <li>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
-                                        <span>Unlimited downloads</span>
-                                    </li>
-                                    <li>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
-                                        <span>Access to Epidemic Sound mobile app</span>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
+                                <p class="item-month">/month</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
+                                    <span>Publish anywhere online</span>
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
+                                    <span>Monetize 1 channel per platform</span>
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
+                                    <span>Unlimited downloads</span>
+                                </li>
+                                <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFF" ><path d="M9 15.5858L19.2934 5.29245L20.7067 6.70758L9 18.4142L3.29332 12.7076L4.70661 11.2924L9 15.5858Z"></path></svg>
+                                    <span>Access to Epidemic Sound mobile app</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
                     </div>
                     <div class="price_item-second">
                         <p>*Billed annually ($119.88/year).</p>
@@ -703,23 +710,35 @@
             </div>
         </footer>
         <script>
-            $(".select-box").click(function (e) {
-                $(".dropdown-submenu").toggle();
-            })
+            $(document).ready(function(){
+                $(".price_label-yearly").click(function(){
+                    $(".price_label-yearly").addClass("label-active");
+                    $(".price_label-monthly").removeClass("label-active");
+                }), $(".price_label-monthly").click(function(){
+                    $(".price_label-monthly").addClass("label-active");
+                    $(".price_label-yearly").removeClass("label-active");
+                });
+            });
 
+            // 장르 섹션 호버효과
             $(document).ready(function (){
                 $(".genre_item-img").hover(function (e) {
                     const parentItem = $(this).closest('.genre_item');
                     parentItem.find('.genre_item-btn').addClass('genre_item-hover');
                     parentItem.find('.genre_item-img').addClass('opacity');
                 }, function (e) {
-                    const parentItem = $(this).closest('.genre_item');
-                    parentItem.find('.genre_item-btn').removeClass('genre_item-hover');
-                    parentItem.find('.genre_item-img').removeClass('opacity');
-                });
+                        const parentItem = $(this).closest('.genre_item');
+                        parentItem.find('.genre_item-btn').removeClass('genre_item-hover');
+                        parentItem.find('.genre_item-img').removeClass('opacity');
+                    });
                 }
             );
-        
+
+            // 푸터 언어 선택창
+            $(".select-box").click(function (e) {
+                $(".dropdown-submenu").toggle();
+            })
+
         </script>
     </body>
 </html>
