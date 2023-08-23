@@ -253,6 +253,11 @@
         display: inline-block;
     }
 
+    .opacity {
+        opacity: 80%;
+    }
+
+
     /* button hover properties End*/
 
     .genre_item-txt p {
@@ -264,9 +269,6 @@
         text-decoration: underline;
     }
 
-    .opacity {
-        opacity: 80%;
-    }
 
     /* --------------------------- Soundtrack Section start----------------------- */
 

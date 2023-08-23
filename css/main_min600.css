@@ -234,11 +234,30 @@
         background: #fff;
     }
 
+    /* button hover properties Start*/
+
     .genre_item-btn {
         position: absolute;
         top: 45%;
         left: 45%;
+
+        display: none;
+
     }
+
+
+    .genre_item-hover {
+        opacity: 80%;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .opacity {
+        opacity: 80%;
+    }
+
+
+    /* button hover properties End*/
 
     .genre_item-txt p {
         margin: 0.2rem auto;
@@ -256,6 +275,7 @@
         line-height: 1.5rem;
     }
 
+    
     /* --------------------------- Soundtrack Section start----------------------- */
 
     .soundtrack_section {
