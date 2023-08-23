@@ -238,11 +238,9 @@
     }
     .select-lang {
         position: absolute;
-        top: 0.5rem;
-        left: 0;
         font-size: 0.8rem;
-        margin: 5px 3rem 0px 1rem;
         letter-spacing: 0.5px;
+        top: 0.5rem;
     }
 
     .arr-down {
