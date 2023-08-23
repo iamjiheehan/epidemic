@@ -269,7 +269,7 @@
             <div class="genre_item-wrap">
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_edm.webp" alt="">
+                        <img src="/img/genre_edm.webp" alt="edm">
                         <div class="genre_item-btn">
                             <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
                         </div>
@@ -278,35 +278,49 @@
                 </div>
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_film.webp" alt="">
+                        <img src="/img/genre_film.webp" alt="film">
+                        <div class="genre_item-btn">
+                            <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
+                        </div>
                     </div>
                     <a href="sub.html" class="genre_item-txt"><p class="white">Film</p></a>
                 </div>
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_pop.webp" alt="">
+                        <img src="/img/genre_pop.webp" alt="pop">
+                        <div class="genre_item-btn">
+                            <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
+                        </div>
                     </div>
                     <a href="sub.html" class="genre_item-txt"><p class="white">Pop</p></a>
                 </div>
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_hiphop.webp" alt="">
+                        <img src="/img/genre_hiphop.webp" alt="hipho">
+                        <div class="genre_item-btn">
+                            <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
+                        </div>
                     </div>
                     <a href="sub.html" class="genre_item-txt"><p class="white">Hip Hop</p></a>
                 </div>
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_classical.webp" alt="">
+                        <img src="/img/genre_classical.webp" alt="classical">
+                        <div class="genre_item-btn">
+                            <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
+                        </div>
                     </div>
                     <a href="sub.html" class="genre_item-txt"><p class="white">Classical</p></a>
                 </div>
                 <div class="genre_item">
                     <div class="genre_item-img">
-                        <img src="/img/genre_Acoustic.webp" alt="">
+                        <img src="/img/genre_Acoustic.webp" alt="Acoustic">
+                        <div class="genre_item-btn">
+                            <button><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pds-color-black, sub.html0F0F0F)"><path d="M20 12L8 5V19L20 12Z"></path></svg></button>
+                        </div>
                     </div>
                     <a href="sub.html" class="genre_item-txt"><p class="white">Acoustic</p></a>
                 </div>
-
             </div>
         </div>
         <div class="soundtrack_section wrap">
@@ -693,6 +707,15 @@
             $(".select-box").click(function (e) {
                 $(".dropdown-submenu").toggle();
             })
+
+            $(".genre_item-img").hover(function (e) {
+                $(".genre_item-btn").addClass("genre_item-hover")
+                $(".genre_item-img").addClass("opacity")
+            }, function (e) {
+                $(".genre_item-btn").removeClass("genre_item-hover")
+                $(".genre_item-img").removeClass("opacity")
+            });
+
         </script>
     </body>
 </html>

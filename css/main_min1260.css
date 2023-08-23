@@ -219,17 +219,11 @@
         min-height: 5.75rem;
     }
 
-    .genre_item:hover {
-        opacity: 80%;
-        cursor: pointer;
-    }
 
     .genre_item-img img {
         border-radius: 8px;
         object-fit: cover;
         width: 100%;
-
-
     }
 
     .genre_item-btn button {
@@ -242,11 +236,24 @@
         background: #fff;
     }
 
+
+    /* button hover properties Start*/
+
     .genre_item-btn {
         position: absolute;
         top: 35%;
         left: 35%;
+
+        display: none;
     }
+
+    .genre_item-hover {
+        opacity: 80%;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    /* button hover properties End*/
 
     .genre_item-txt p {
         margin: 0.2rem auto;
@@ -255,6 +262,10 @@
 
     .genre_item-txt:hover {
         text-decoration: underline;
+    }
+
+    .opacity {
+        opacity: 80%;
     }
 
     /* --------------------------- Soundtrack Section start----------------------- */
