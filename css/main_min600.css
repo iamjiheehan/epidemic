@@ -4,6 +4,7 @@
     /* --------------------------- welcome Section start----------------------- */
 
     .welcome_section {
+        padding: 5rem 4rem 8rem 5rem;
         padding-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -11,7 +12,10 @@
     }
 
     .welcome_section h1 {
-        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        font-size: 3.5rem;
+        line-height: 4rem;
     }
 
     .welcome_section-flex {
@@ -21,162 +25,156 @@
         gap: 1rem;
     }
 
-   /* --------------------------- Showcase Section start----------------------- */
+    /* --------------------------- Showcase Section start----------------------- */
 
-   .showcase_section-title {
-    font-size: 3rem;
-    /* line-height: 3.5rem; */
-    color: #fff;
-    text-align: center;
-    padding-bottom: 1.5rem;
-}
-
-.showcase_section-title h4 {
-    margin: 0;
-    padding: 0;
-}
-
-.showcase_section-title li {
-    color: #723fff;
-    font-weight: 800;
-}
-
-
-.showcase_section-slide ul {
-    position: relative;
-    display: flex;
-    gap: 2rem;
-    max-width: 2750px;
-    margin: 0 auto;
-
-    animation: bannermove 40s linear infinite;
-}
-
-
-
-@keyframes bannermove {
-    0% {
-        transform: translate(0, 0);
+    .showcase_section-title {
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 3.5rem;
     }
-    100% {
-        transform: translate(-50%, 0);
+
+    .showcase_section-title h4 {
+        margin: 0;
+        padding: 0;
     }
-}
 
-.showcase_section-slide {
-    overflow: hidden;
-}
+    .showcase_section-title li {
+        color: #723fff;
+        font-weight: 800;
+    }
 
+    .showcase_section-slide ul {
+        position: relative;
+        display: flex;
+        gap: 2rem;
+        max-width: 2750px;
+        margin: 0 auto;
 
-.showcase_section-slide > ul > li {
-    position: relative;
-    border-radius: 0.4rem;
-}
+        animation: bannermove 40s linear infinite;
+    }
 
-.slide-img {
-    width: auto;
-    height: 506px;
-}
+    @keyframes bannermove {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-50%, 0);
+        }
+    }
 
-.slide-img img {
-    height: 100%;
-}
+    .showcase_section-slide {
+        overflow: hidden;
+    }
 
-.slide-img:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0) 100%);
-}
+    .showcase_section-slide > ul > li {
+        position: relative;
+        border-radius: 0.4rem;
+    }
 
+    .slide-img {
+        width: auto;
+        height: 506px;
+    }
 
-/* --------------showcase section Column Banner animation start ----------- */
+    .slide-img img {
+        height: 100%;
+    }
 
-.showcase_txtslide-wrap {
-    display: grid;
-    overflow: hidden;
-}
+    .slide-img:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0) 100%);
+    }
 
-.showcase_txtslide-container {
-    height: auto;
-}
+    /* --------------showcase section Column Banner animation start ----------- */
 
-.showcase_txtslide-item {
-    animation: textmove 32s infinite;
-    grid-area: 1 / 1;
-    opacity: 0;
-}
+    .showcase_txtslide-wrap {
+        display: grid;
+        overflow: hidden;
+    }
 
-.showcase_txtslide-wrap li:nth-child(2) {
-    animation-delay: 4s;
-}
+    .showcase_txtslide-container {
+        height: auto;
+    }
 
-.showcase_txtslide-wrap li:nth-child(3) {
-    animation-delay: 8s;
-}
-
-.showcase_txtslide-wrap li:nth-child(4) {
-    animation-delay: 12s;
-}
-
-.showcase_txtslide-wrap li:nth-child(5) {
-    animation-delay: 16s;
-}
-
-.showcase_txtslide-wrap li:nth-child(6) {
-    animation-delay: 20s;
-}
-
-.showcase_txtslide-wrap li:nth-child(7) {
-    animation-delay: 24s;
-}
-
-.showcase_txtslide-wrap li:nth-child(8) {
-    animation-delay: 28s;
-}
-
-@keyframes textmove {
-    0% {
+    .showcase_txtslide-item {
+        animation: textmove 32s infinite;
+        grid-area: 1 / 1;
         opacity: 0;
-        animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
-        transform: translateY(100%);
     }
-    1.5% {
-        opacity: 1;
-        transform: translateY(0);
+
+    .showcase_txtslide-wrap li:nth-child(2) {
+        animation-delay: 4s;
     }
-    12.5% {
-        opacity: 1;
-        transform: translateY(0);
+
+    .showcase_txtslide-wrap li:nth-child(3) {
+        animation-delay: 8s;
     }
-    14% {
-        opacity: 0;
-        animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
-        transform: translateY(-100%);
+
+    .showcase_txtslide-wrap li:nth-child(4) {
+        animation-delay: 12s;
     }
-    100% {
-        opacity: 0;
-        transform: translateY(-100%);
+
+    .showcase_txtslide-wrap li:nth-child(5) {
+        animation-delay: 16s;
     }
-}
 
-/* --------------showcase section Banner animation finiish ----------- */
+    .showcase_txtslide-wrap li:nth-child(6) {
+        animation-delay: 20s;
+    }
 
-.slide-txt {
-    position: absolute;
-    inset: auto auto 2.5rem 2.5rem;
-}
+    .showcase_txtslide-wrap li:nth-child(7) {
+        animation-delay: 24s;
+    }
 
-.slide-txt h3 {
-    margin: 0.4rem;
-    font-size: 2.5rem;
-}
+    .showcase_txtslide-wrap li:nth-child(8) {
+        animation-delay: 28s;
+    }
 
-.slide-txt p {
-    margin: 0.2rem;
-}
+    @keyframes textmove {
+        0% {
+            opacity: 0;
+            animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+            transform: translateY(100%);
+        }
+        1.5% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        12.5% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        14% {
+            opacity: 0;
+            animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
 
-/* --------------------------- brand_item start----------------------- */
+    /* --------------showcase section Banner animation finiish ----------- */
+
+    .slide-txt {
+        position: absolute;
+        inset: auto auto 2.5rem 2.5rem;
+    }
+
+    .slide-txt h3 {
+        margin: 0.4rem;
+        font-size: 2.5rem;
+    }
+
+    .slide-txt p {
+        margin: 0.2rem;
+    }
+
+    /* --------------------------- brand_item start----------------------- */
     .brand_section {
         display: grid;
         -moz-column-gap: 2rem;
@@ -251,10 +249,29 @@
         text-decoration: underline;
     }
 
+    .genre_section-txt p {
+        padding: 2rem 0;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
     /* --------------------------- Soundtrack Section start----------------------- */
 
     .soundtrack_section {
         padding-bottom: 5rem;
+    }
+
+    .soundtrack_section h2 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .soundtrack_section p {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding: 2rem 0;
     }
 
     .soundtrack_section ul {
@@ -341,6 +358,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1rem 0;
     }
 
     .how_R-item h3 {
@@ -376,7 +395,7 @@
     .price_title {
         padding-bottom: 3rem;
     }
-    
+
     .price_temp {
         height: 3rem;
         width: 100%;
@@ -403,7 +422,6 @@
         font-size: 2rem;
         line-height: auto;
         padding-bottom: 1rem;
-
     }
 
     .item-personal {
@@ -661,7 +679,8 @@
         margin: 5rem 0;
     }
 
-    .sub_plan-wrap h2, .sub_soundtrack-wrap h2 {
+    .sub_plan-wrap h2,
+    .sub_soundtrack-wrap h2 {
         letter-spacing: -0.02em;
         font-size: 2.5rem;
         line-height: 3rem;
@@ -673,7 +692,8 @@
         grid-row: 1 / auto;
     }
 
-    .sub_plan-img img, .sub_soundtrack-img img {
+    .sub_plan-img img,
+    .sub_soundtrack-img img {
         display: block;
         width: 100%;
         height: 100%;
@@ -693,14 +713,13 @@
         margin: 6rem 0;
     }
 
-
-    .sub_soundtrack-txt p{
+    .sub_soundtrack-txt p {
         margin: 1rem 0;
     }
 
-    .sub_soundtrack-txt p, .sub_soundtrack-txt h2{
+    .sub_soundtrack-txt p,
+    .sub_soundtrack-txt h2 {
         padding-left: 0;
-
     }
     /* --------------------------------------- Sub Column Section Start ---------------------------------------------*/
 
