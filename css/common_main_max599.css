@@ -128,11 +128,12 @@
     .main_logo-txt {
         width: 167px;
         font-size: 0;
+        display: none;
     }
 
     .main_logo-img {
         width: 19.5px;
-        display: none;
+        display: inline-block;
     }
 
     .util {
