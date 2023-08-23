@@ -219,6 +219,11 @@
         min-height: 5.75rem;
     }
 
+    .genre_item-img img:hover {
+        background-color: #E7E7E7;
+        cursor: pointer;
+    }
+
     .genre_item-img img {
         border-radius: 8px;
         object-fit: cover;
@@ -237,8 +242,8 @@
 
     .genre_item-btn {
         position: absolute;
-        top: 37%;
-        left: 37%;
+        top: 35%;
+        left: 35%;
     }
 
     .genre_item-txt p {
