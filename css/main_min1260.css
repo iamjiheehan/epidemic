@@ -219,8 +219,8 @@
         min-height: 5.75rem;
     }
 
-    .genre_item-img img:hover {
-        background-color: #E7E7E7;
+    .genre_item:hover {
+        opacity: 80%;
         cursor: pointer;
     }
 
@@ -228,6 +228,8 @@
         border-radius: 8px;
         object-fit: cover;
         width: 100%;
+
+
     }
 
     .genre_item-btn button {
